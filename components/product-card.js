@@ -6,7 +6,7 @@ export default function ProductCard({ product, addToCart }) {
           data-testid="image"
           className="flex items-end justify-end h-56 w-full bg-cover"
           style={{
-            backgroundImage: `url(${product.image})`,
+            backgroundImage: `url(${product?.image})`,
           }}
         >
           <button
@@ -27,8 +27,8 @@ export default function ProductCard({ product, addToCart }) {
           </button>
         </div>
         <div className="px-5 py-3">
-          <h3 className="text-gray-700 uppercase">{product.title}</h3>
-          <span className="text-gray-500 mt-2">${product.price}</span>
+          <h3 className="text-gray-700 uppercase">{product?.title}</h3>
+          <span className="text-gray-500 mt-2">${product?.price}</span>
         </div>
       </div>
     </section>

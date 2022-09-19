@@ -20,6 +20,7 @@ export default function Search({ doSearch }) {
     <form
       onSubmit={submitHandler}
       name="search-form"
+      data-testid="search"
       className="relative mt-6 max-w-lg mx-auto"
     >
       <span className="absolute inset-y-0 left-0 pl-3 flex items-center">

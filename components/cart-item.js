@@ -9,11 +9,11 @@ export default function CartItem({ product }) {
         <img
           data-testid="image"
           className="h-20 w-20 object-cover rounded"
-          src={product.image}
-          alt={product.title}
+          src={product?.image}
+          alt={product?.title}
         />
         <div className="mx-3">
-          <h3 className="text-sm text-gray-600">{product.title}</h3>
+          <h3 className="text-sm text-gray-600">{product?.title}</h3>
           <button
             onClick={() => {
               remove(product);
@@ -40,7 +40,7 @@ export default function CartItem({ product }) {
               </svg>
             </button>
             <span data-testid="quantity" className="text-gray-700 mx-2">
-              {product.quantity}
+              {product?.quantity}
             </span>
             <button
               data-testid="increase"
@@ -62,7 +62,7 @@ export default function CartItem({ product }) {
           </div>
         </div>
       </div>
-      <span className="text-gray-600">${product.price}</span>
+      <span className="text-gray-600">${product?.price}</span>
     </div>
   );
 }
