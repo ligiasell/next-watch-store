@@ -25,7 +25,7 @@ export default function CartItem({ product }) {
             <button
               data-testid="decrease"
               onClick={() => decrease(product)}
-              className="text-gray-500 focus:outline-none focus:text-gray-600"
+              className="text-gray-600 focus:outline-none focus:text-gray-600"
             >
               <svg
                 className="h-5 w-5"
